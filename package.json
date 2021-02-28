@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/DSNCND/03-bakcNodejs/issues"
   },
-  "homepage": "https://github.com/DSNCND/03-bakcNodejs#readme"
+  "homepage": "https://github.com/DSNCND/03-bakcNodejs#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
 }
