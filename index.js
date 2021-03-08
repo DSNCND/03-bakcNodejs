@@ -1,12 +1,17 @@
-console.log("Prueba");
+const yargs = require('yargs/yargs')
+const {hideBin} = require('yargs/helpers')
+const argv = yargs(hideBin(process.argv)).argv;
+const {multiplicar} = require('./multiplicador');
 
-const base = 2;
+let base = 2;
+//tiene que ser un argumento argv.base
+//document.base != argv.base //tiene distinta raiz
+console.log(argv);
+console.log(argv.base);
+console.log(argv.numero);
+
+const resultado = multiplicar(argv.base);
+
+console.log(resultado)
 
 
-console.log(`tabla del ${base}`)
-
-for(let i=1; i<10; i++)
-{
-    resultado=`${base}*${i}=${base*i}`
-    console.log(resultado);
-}

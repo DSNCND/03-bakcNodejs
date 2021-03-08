@@ -1,0 +1,1 @@
+### Carpeta necesaria para generar los archivos (tablas) de la app.

@@ -4,6 +4,8 @@
   "description": "Aplicacion de linea de comandos para multiplicar",
   "main": "index.js",
   "scripts": {
+    "dev": "nodemon index",
+    "start": "node index",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,5 +20,9 @@
   "homepage": "https://github.com/DSNCND/03-bakcNodejs#readme",
   "devDependencies": {
     "nodemon": "^2.0.7"
+  },
+  "dependencies": {
+    "colors": "^1.4.0",
+    "yargs": "^16.2.0"
   }
 }
