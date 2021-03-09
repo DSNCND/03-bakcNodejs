@@ -1,13 +1,13 @@
 # 03-backNodejs
 
-*npm y package.json
-*nodemon
-*Separamos logica de nuestro codigo en diferentes archivos
-*Exportamos y requerimos loos mismos
-*Requerimos modulos de node
-*Creamos archivos con el modulo de fs
-*Instalamos dependencias
-*Utilizamos los paquetes de Yargs y Colors
+* npm y package.json
+* nodemon
+* Separamos logica de nuestro codigo en diferentes archivos
+* Exportamos y requerimos loos mismos
+* Requerimos modulos de node
+* Creamos archivos con el modulo de fs
+* Instalamos dependencias
+* Utilizamos los paquetes de Yargs y Colors
 
 Usando:
 $ node index --help
