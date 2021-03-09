@@ -1,17 +1,35 @@
-const yargs = require('yargs/yargs')
-const {hideBin} = require('yargs/helpers')
-const argv = yargs(hideBin(process.argv)).argv;
 const {multiplicar} = require('./multiplicador');
+const argv = require('yargs')
+    
+    .option('b', {
+    alias: 'base',
+    type: 'number',
+    demandOption: true,
+    describe:'Es la base de la tabla de multiplicar'})
+    
+    .option('l', {
+    alias: 'limite',
+    type: 'number',
+    demandOption: false,
+    default: 10,
+    describe:'Es el valor limite de la tabla de multiplicar'})
+    
+    .option('v', {
+    alias: 'visualizar',
+    type: 'boolean',
+    demandOption: false,
+    default: false,
+    describe:'Muestra la tabla en la consola',
+})
+.check((argv, options) => {
+    if(isNaN(argv.b))
+    {
+        throw new Error('La base tiene que ser un numero.')
+    }return true;
+})
+.help()
+.version()
+.argv;
 
-let base = 2;
-//tiene que ser un argumento argv.base
-//document.base != argv.base //tiene distinta raiz
-console.log(argv);
-console.log(argv.base);
-console.log(argv.numero);
 
-const resultado = multiplicar(argv.base);
-
-console.log(resultado)
-
-
+multiplicar(argv.base, argv.limite, argv.visualizar);

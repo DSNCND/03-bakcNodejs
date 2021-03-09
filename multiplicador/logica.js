@@ -1,4 +1,4 @@
-const { argv } = require("yargs");
+//const { argv } = require("yargs");
 
 const logica = (base,limite) =>
 {
